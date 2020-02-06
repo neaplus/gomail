@@ -51,5 +51,5 @@ func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintf(w, "gomail\n%s %s", r.Method, r.URL.Path[1:])
 	})
-	http.ListenAndServe("0.0.0.0:25587", nil)
+	log.Fatal(http.ListenAndServe("0.0.0.0:25587", nil))
 }

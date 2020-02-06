@@ -41,7 +41,9 @@ func init() {
 	pass = os.Getenv("GOMAIL_AUTH_PASSWORD")
 	to = os.Getenv("GOMAIL_TO")
 	sa = smtp.PlainAuth("", from, pass, host)
-	log.Println(host, port, from, pass, to, sa)
+	if os.Getenv("DEBUG") != "" {
+		log.Println(host, port, from, pass, to, sa)
+	}
 }
 
 // SendMail ...
