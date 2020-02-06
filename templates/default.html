@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style type="text/css" rel="stylesheet" media="all">
+        *,
+        html,
+        body {
+            font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+        }
+
+        @media only screen and (max-width: 600px) {
+
+            .email-body_inner,
+            .email-footer {
+                width: 100% !important;
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+            .button {
+                width: 100% !important;
+            }
+        }
+    </style>
+</head>
+
+<body dir="ltr"
+    style="height: 100%; margin: 0; line-height: 1.4; background-color: #F2F4F6; color: #74787E; -webkit-text-size-adjust: none;  -webkit-box-sizing: border-box; box-sizing: border-box; width: 100%;">
+    <table class="email-wrapper" width="100%" cellpadding="0" cellspacing="0"
+        style="-webkit-box-sizing: border-box; box-sizing: border-box; width: 100%; margin: 0; padding: 0; background-color: #F2F4F6;"
+        bgcolor="#F2F4F6">
+        <tr>
+            <td align="center" style="-webkit-box-sizing: border-box; box-sizing: border-box;">
+                <table class="email-content" width="100%" cellpadding="0" cellspacing="0"
+                    style="-webkit-box-sizing: border-box; box-sizing: border-box; width: 100%; margin: 0; padding: 0;">
+                    <tr>
+                        <td class="email-masthead"
+                            style="-webkit-box-sizing: border-box; box-sizing: border-box; padding: 25px 0; text-align: center;"
+                            align="center">
+                            <a class="email-masthead_name" href="#" target="_blank"
+                                style="-webkit-box-sizing: border-box; box-sizing: border-box; font-size: 16px; font-weight: bold; color: #2F3133; text-decoration: none; text-shadow: 0 1px 0 white;">&nbsp;</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="email-body" width="100%"
+                            style="-webkit-box-sizing: border-box; box-sizing: border-box; width: 100%; margin: 0; padding: 0; border-top: 1px solid #EDEFF2; border-bottom: 1px solid #EDEFF2; background-color: #FFF;"
+                            bgcolor="#FFF">
+                            <table class="email-body_inner" align="center" width="570" cellpadding="0" cellspacing="0"
+                                style="-webkit-box-sizing: border-box; box-sizing: border-box; width: 570px; margin: 0 auto; padding: 0;">
+                                <tr>
+                                    <td class="content-cell"
+                                        style="-webkit-box-sizing: border-box; box-sizing: border-box; padding: 35px;">
+                                        {{.Message}}
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="-webkit-box-sizing: border-box; box-sizing: border-box;">
+                            <table class="email-footer" align="center" width="570" cellpadding="0" cellspacing="0"
+                                style="-webkit-box-sizing: border-box; box-sizing: border-box; width: 570px; margin: 0 auto; padding: 0; text-align: center;">
+                                <tr>
+                                    <td class="content-cell"
+                                        style="-webkit-box-sizing: border-box; box-sizing: border-box; padding: 35px;">
+                                        UserIP: {{.UserIP}}<br />
+                                        UserAgent: {{.UserAgent}}<br />
+                                        <br />
+                                        <p class="sub center"
+                                            style="margin-top: 0; line-height: 1.5em;  -webkit-box-sizing: border-box; box-sizing: border-box; color: #AEAEAE; font-size: 12px; text-align: center;">
+                                            &copy; 2020 <a href="https://github.com/neaplus/gomail" target="_blank"
+                                                style="color: #3869D4;  -webkit-box-sizing: border-box; box-sizing: border-box;">gomail</a>.
+                                            All rights reserved.
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

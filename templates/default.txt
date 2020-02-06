@@ -1,0 +1,6 @@
+
+{{.Message}}
+
+-----
+Remote Host :   {{.UserIP}}
+User Agent  :   {{.UserAgent}}

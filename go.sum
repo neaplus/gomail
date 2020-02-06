@@ -1,0 +1,4 @@
+github.com/joho/godotenv v1.3.0 h1:Zjp+RcGpHhGlrMbJzXTrZZPrWj+1vfm90La1wgB6Bhc=
+github.com/joho/godotenv v1.3.0/go.mod h1:7hK45KPybAkOC6peb+G5yklZfMxEjkZhHbwpqxOKXbg=
+golang.org/x/vgo v0.0.0-20180912184537-9d567625acf4 h1:ouUW0k6XvH360Tr2/HkzQWY7/aU+3QVkfWnrRNf2udQ=
+golang.org/x/vgo v0.0.0-20180912184537-9d567625acf4/go.mod h1:rPwukS3Aj8LZv1dK2rFNXSfYxdueYuvBJ7u3uL3f47I=
