@@ -15,13 +15,14 @@ type (
 	// Payload ...
 	Payload struct {
 		// application/system name
-		Sender    string
-		Title     string
-		Message   string
-		IsHTML    bool
-		Template  string
-		UserIP    string
-		UserAgent string
+		Sender       string
+		Title        string
+		Message      string
+		IsHTML       bool
+		Template     string
+		UserIP       string
+		UserAgent    string
+		OptRecipient string
 	}
 )
 
@@ -51,6 +52,9 @@ func SendMail(p Payload) error {
 	msg := &bytes.Buffer{}
 	msg.WriteString("From: " + p.Sender + " <" + from + ">\n")
 	msg.WriteString("To: " + to + "\n")
+	if p.OptRecipient != "" {
+		msg.WriteString("Cc: " + p.OptRecipient + "\n")
+	}
 	msg.WriteString("Subject: " + p.Title + "\n")
 	msg.WriteString(fmt.Sprintf("MIME-version: 1.0;\nContent-Type: %s; charset=\"UTF-8\";\n\n",
 		Ternary(p.IsHTML, "text/html", "text/plain")))
